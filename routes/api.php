@@ -15,6 +15,7 @@ use App\Http\Controllers\Users;
 |
 */
 Route::get('/users', [Users::class, 'index']);
+Route::get('/users/{id}', [Users::class, 'show']);
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

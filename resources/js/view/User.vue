@@ -1,9 +1,10 @@
 <template>
     <div>
     
-        <section v-if="name">
+        <section v-if="id">
     
-            <h1>{{name}} Page</h1>
+            <h1>ID : {{provinsi.id}}</h1>
+            <h1>Nama : {{provinsi.name}}</h1>
     
         </section>
     
@@ -18,7 +19,19 @@
 
 <script>
 export default {
-    props: ['name']
+    props: ['id'],
+    data() {
+        return {
+            Page: 'Home Page',
+            provinsi: []
+        }
+    },
+    mounted() {
+        axios.get('/api/users/' +this.id).then((response) => {
+            // console.log(response)
+            this.provinsi = response.data
+        })
+    },
 }
 </script>
 
