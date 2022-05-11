@@ -3,7 +3,7 @@
     
         <section v-if="id">
     
-            <h1>ID : {{provinsi.id}}</h1>
+            <h1>ID   : {{provinsi.id}}</h1>
             <h1>Nama : {{provinsi.name}}</h1>
     
         </section>

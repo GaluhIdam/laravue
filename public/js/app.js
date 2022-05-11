@@ -11840,7 +11840,7 @@ var render = function () {
   return _c("div", [
     _vm.id
       ? _c("section", [
-          _c("h1", [_vm._v("ID : " + _vm._s(_vm.provinsi.id))]),
+          _c("h1", [_vm._v("ID   : " + _vm._s(_vm.provinsi.id))]),
           _vm._v(" "),
           _c("h1", [_vm._v("Nama : " + _vm._s(_vm.provinsi.name))]),
         ])
